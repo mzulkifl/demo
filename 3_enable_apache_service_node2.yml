@@ -1,5 +1,5 @@
 ---
-- name: Apache enabled
+- name: Apache service enabled
   hosts: node2
   become: yes
   tasks:
