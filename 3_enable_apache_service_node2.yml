@@ -1,0 +1,10 @@
+---
+- name: Apache enabled
+  hosts: node2
+  become: yes
+  tasks:
+  - name: Apache enabled and running
+    service:
+      name: httpd
+      enabled: true
+      state: started
